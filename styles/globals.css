@@ -1,26 +1,59 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Apply to everything */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  text-align: center;
+  color: #333;
+}
+
+/* Navbar styling */
+nav {
+  background-color: #333;
+  padding: 12px;
+}
+
+nav a {
+  color: white;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Page layout */
+h1 {
+  color: #222;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+/* Buttons */
+button {
+  padding: 8px 14px;
+  margin: 8px;
+  cursor: pointer;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+/* Input field */
+input {
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
 }
